@@ -20,9 +20,9 @@ body {
 
 .calc {
     /* красивый фон калькулятора: */
-    background: linear-gradient(300deg, #483D8B, #4B0082, #F0FFFF);
+    background: linear-gradient(10deg, #483D8B, #7B68EE, #E6E6FA);
 
-    width: 465px;
+    width: 60vh;
     border: solid 3px #555;
     border-radius: 8px;
 
