@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'sans-serif';
+}
+
+.my_container {
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+}
+
+.calc {
+    /* красивый фон калькулятора: */
+    background: linear-gradient(300deg, #483D8B, #4B0082, #F0FFFF);
+
+    width: 465px;
+    border: solid 3px #555;
+    border-radius: 8px;
+
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 75px;
+    gap: 20px;
+}
+
+/* Поле результата вычислений: */
+.field_result {
+    grid-column: 1/-1;
+    padding: 12px;
+    background-color: white;
+
+    color: black;
+    font-size: 48px;
+    text-align: right;
+}
+
+/* Вид кнопок: */
+.button_calc {
+    cursor: pointer;
+    border: black;
+    border-radius: 48%;
+    box-shadow: 3px 3px 3px black;
+
+    background-color: white;
+    font-size: 30px;
+}
+
+/* Вид кнопок при наведении на них: */
+.button_calc:hover {
+    -webkit-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.button_operation {
+    color: orange;
+    font-weight: bold;
+}
+
+.button_clean {
+    color: red;
+    grid-column: 1/3;
+    border-radius: 3%;
+}
+
+.button_equally {
+    color: blue;
+    grid-column: 3/-1;
+    border-radius: 3%;
+}
+
+.my_footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 44px;
+    width: 100%;
+    background: #483D8B;
+    color: #FFFAFA;
+    font-size: 20px;
+}
+
+.tab {
+    margin-left: 30px;
+    margin-top: 10px;
+}
